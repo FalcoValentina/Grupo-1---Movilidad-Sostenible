@@ -9,10 +9,11 @@ body {
     background: #d2fee1;
     height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    flex-direction: column;
 }
 header {
     background-color: #d2fee1;
@@ -83,11 +84,12 @@ i:hover {
 }
 
 /* nuevo */
+/* Estilo del Carrusel */
 .carousel {
     position: relative;
     width: 80%;
-    max-width: 600px;
-    margin: 40px auto;  /* Asegura que el carrusel tenga margen en la parte superior e inferior */
+    max-width: 800px;
+    margin: 0 auto; /* Asegura que el carrusel esté centrado y con márgenes superiores e inferiores */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -144,6 +146,7 @@ i:hover {
   .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+  
 
 /* hasta aca */
 
