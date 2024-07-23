@@ -83,6 +83,22 @@ i:hover {
     transform: scaleX(1);
 }
 
+
+/*nuevas cosas*/
+.container {
+    display: flex; 
+    align-items: flex-start; 
+  }
+
+  
+  .txt-q {
+    margin-left: 20px; 
+}
+.text-content h2 {
+  margin-bottom: 20px;
+}
+
+
 /* nuevo */
 /* Estilo del Carrusel */
 .carousel {
