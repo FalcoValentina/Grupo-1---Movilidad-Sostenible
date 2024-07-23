@@ -84,7 +84,7 @@ i:hover {
 }
 
 
-/*nuevas cosas*/
+/*seccion quienes somos*/
 .container {
     display: flex; 
     align-items: flex-start; 
@@ -98,6 +98,7 @@ i:hover {
   margin-bottom: 20px;
 }
 
+/*fin seccion quienes somos*/
 
 /* nuevo */
 /* Estilo del Carrusel */
