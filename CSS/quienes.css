@@ -141,7 +141,7 @@ p {
   padding-top: 50px;
 }
 
-. p {
+.p {
   padding: 20px;
   color: #034752;
 @media (max-width: 768px) {
