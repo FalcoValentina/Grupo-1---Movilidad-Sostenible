@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-        
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 } 
+
 body {
   background-color: #034752;
   height: 100vh;
@@ -21,34 +20,40 @@ body {
 header {
   background-color: #034752;
   padding: 20px  40px;
-  display: flex; /* Enable flexbox layout */
-  justify-content: space-between; /* Distribute space between items */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   width: 100%;
 }
 
+.contenido {
+  display: flex; 
+  align-items: flex-start;
+  padding: 20px; 
+  max-width: 80%; 
+  margin: 0 auto; 
+}
+
+.imagen {
+  max-width: 100%; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+.texto {
+  max-width: 60%; 
+}
 
 h2 {
-  
-  font-size: 18px;
-  font-style: normal;
-  margin-bottom: 10px;
+  font-size: 24px; 
+  margin-left: 10px;
   color: #ffffff;
-  margin: 0;
 }
 
-
-.txt-q {
-  margin-top: 10px;
-}
-
-.txtlist {
-  text-align: left;
+p {
   font-size: 18px;
-  font-style: normal;
-  margin-bottom: 10px;
   color: #ffffff;
-  margin: 0;
+  margin-right: 10px;
 }
 
 a {
@@ -61,16 +66,7 @@ a {
 
 .titulo {
   margin: 0px;
-}
-
-.texto {
-  display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.imagen {
-  margin-right: 20px;
+  color:#ffffff
 }
 
 .navegacion {
@@ -88,11 +84,11 @@ a {
 }
 
 i {
-  
   color: #00D47F;
   font-size: 25px;
   transition: opacity 0.3s ease-in-out;
 }
+
 i:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -126,21 +122,12 @@ i:hover {
   height: 50%;
 }
 
-p {
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 10px;
-  color: #ffffff;
-  margin-right: 10px;
-}
-
-
-
 .p {
     padding: 20px;
     color: #034752;
-   }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
   h1 {
       font-size: 3em;
   }
@@ -163,4 +150,3 @@ p {
       font-size: 20px;
   }
 }
-
