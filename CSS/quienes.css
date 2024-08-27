@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+       
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 } 
-
 body {
   background-color: #034752;
   height: 100vh;
@@ -20,41 +18,12 @@ body {
 header {
   background-color: #034752;
   padding: 20px  40px;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically */
   width: 100%;
 }
 
-.contenido {
-  display: flex; 
-  align-items: flex-start;
-  padding: 20px; 
-  max-width: 80%; 
-  margin: 0 auto; 
-}
-
-.imagen {
-  max-width: 100%; 
-  height: auto; 
-  margin-right: 20px; 
-}
-
-.texto {
-  max-width: 60%; 
-}
-
-h2 {
-  font-size: 24px; 
-  margin-left: 10px;
-  color: #ffffff;
-}
-
-p {
-  font-size: 18px;
-  color: #ffffff;
-  margin-right: 10px;
-}
 
 a {
   color: white;
@@ -64,10 +33,49 @@ a {
   text-decoration: none;
 }
 
-.titulo {
-  margin: 0px;
-  color:#ffffff
+/*secciones*/
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
+
+.section1 img, .section2 img, .section3 img {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.section1 .text-content, .section2 .text-content, .section3 .text-content {
+  width: 60%;
+}
+
+.section1 .text-content {
+  order: 2;
+}
+
+.section1 img {
+  order: 1;
+}
+
+.section2 .text-content, .section3 .text-content {
+  order: 1;
+}
+
+.section2 img, .section3 img {
+  order: 2;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
 
 .navegacion {
   display: flex;
@@ -84,11 +92,11 @@ a {
 }
 
 i {
+  
   color: #00D47F;
   font-size: 25px;
   transition: opacity 0.3s ease-in-out;
 }
-
 i:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -122,9 +130,32 @@ i:hover {
   height: 50%;
 }
 
-.p {
-    padding: 20px;
-    color: #034752;
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  header {
+      flex-direction: column;
+  }
+  h1 {
+      font-size: 4em;
+  }
+  .navegacion {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+  .list {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
