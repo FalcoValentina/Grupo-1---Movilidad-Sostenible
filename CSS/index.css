@@ -394,6 +394,7 @@ p {
 
 
 /*Estilos para Carrusel*/
+
 .carrusel {
     background-color: #D2FFE2; 
     height: 100vh; 
@@ -588,8 +589,7 @@ p {
 
 
 
-
-@media (max-width: 992px) {
+{ @media (max-width: 992px) 
     header {
         flex-direction: column;
     }

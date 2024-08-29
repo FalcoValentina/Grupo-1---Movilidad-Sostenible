@@ -1,0 +1,387 @@
+styles.css
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+body {
+  background-color: #034752;
+  height: 100vh;
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  flex-direction: column;
+}
+
+header {
+  background-color: #034752;
+  padding: 20px  40px;
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically */
+  width: 100%;
+}
+
+
+a {
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*secciones*/
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section1 img, .section2 img, .section3 img {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.section1 .text-content, .section2 .text-content, .section3 .text-content {
+  width: 60%;
+}
+
+.section1 .text-content {
+  order: 2;
+}
+
+.section1 img {
+  order: 1;
+}
+
+.section2 .text-content, .section3 .text-content {
+  order: 1;
+}
+
+.section2 img, .section3 img {
+  order: 2;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+i {
+  
+  color: #00D47F;
+  font-size: 25px;
+  transition: opacity 0.3s ease-in-out;
+}
+i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.menu {
+  color: #fff;
+  padding: .5rem;
+  position: relative;
+}
+
+.menu::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.menu:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  width: 18%;
+  height: 50%;
+}
+
+
+@media (max-width: 992px) {
+  header {
+      flex-direction: column;
+  }
+  h1 {
+      font-size: 4em;
+  }
+  .navegacion {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+  .list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 3em;
+  }
+  .menu {
+      font-size: 1.2rem;
+  }
+  i {
+      font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 2.5em;
+  }
+  .menu {
+      font-size: 1rem;
+  }
+  i {
+      font-size: 20px;
+  }
+
+}
+
+
+styles.css
+<Head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMove</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to your CSS file -->
+ </head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Logo de EcoMove" class="logo">
+            <nav class="navegacion">
+                <ul class="list">
+                    <li class="menu"><a href="quienes.html">¿Quiénes somos?</a></li>
+                    <li class="menu"><a href="articulos.html">Artículos</a></li>
+                    <li class="menu"><a href="#">Estadísticas</a></li>
+                    <li class="menu"><a href="#">Recompensas</a></li>
+                </ul>
+                <i class="ri-search-line"></i>
+                <i class="ri-menu-line"></i>
+            </nav>
+        </div>
+      </header>
+
+
+
+    <main>
+        <!-- Add your main content here -->
+        <section class="quienes">
+            <h2>¿Quiénes somos?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+
+        <section class="como-funciona">
+            <h3>¿Cómo funciona?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+
+    <script src="script.js"></script> <!-- link to your JavaScript file -->
+</body>
+
+body {
+  background-color: #034752;
+  height: 100vh;
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  flex-direction: column;
+}
+
+header {
+  background-color: #034752;
+  padding: 20px 40px;
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically */
+  width: 100%;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*secciones*/
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section1 img, .section2 img, .section3 img {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.section1 .text-content, .section2 .text-content, .section3 .text-content {
+  width: 60%;
+}
+
+.section1 .text-content {
+  order: 2;
+}
+
+.section1 img {
+  order: 1;
+}
+
+.section2 .text-content, .section3 .text-content {
+  order: 1;
+}
+
+.section2 img, .section3 img {
+  order: 2;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+i {
+  color: #00D47F;
+  font-size: 25px;
+  transition: opacity 0.3s ease-in-out;
+}
+i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.menu {
+  color: #fff;
+  padding: .5rem;
+  position: relative;
+}
+
+.menu::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.menu:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  width: 18%;
+  height: 50%;
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  .navegacion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  .menu {
+    font-size: 1.2rem;
+  }
+  i {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .menu {
+    font-size: 1rem;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+> 94af0f3341e3d8414be6b810f35d283686440309

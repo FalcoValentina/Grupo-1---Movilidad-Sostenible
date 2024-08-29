@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+         //hay que elegir que buscador "source map" abre mejor nuestro proyecto, 
+    // desde mi commpu no pude abrir con chrome. avisenme si pueden abrirlo con google chrome ustedes
+    // estos source maps ayudan a mapear el código fuente original al código ejecutable en el navegador
+    // solo hay que configurarlo. lo intenté pero no me salió
+
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+    
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
