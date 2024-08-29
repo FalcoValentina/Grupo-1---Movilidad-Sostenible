@@ -1,35 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
-/* @font-face {
-    font-family: 'PlusJarkartaSans';
-    src: url('../Tipografía/PlusJakartaSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-    @font-face {
-        font-family: 'PlusJarkartaSans-Bold';
-        src: url('../Tipografía/PlusJakartaSans-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-        }
-        @font-face {
-            font-family: 'PlusJarkartaSans';
-            src: url('../Tipografía/PlusJakartaSans-Medium.ttf') format('truetype');
-            font-weight: 500;
-            font-style: normal;
-            }
-            @font-face {
-                font-family: 'PlusJarkartaSans';
-                src: url('../Tipografía/PlusJakartaSans-Italic.ttf') format('truetype');
-                font-weight: normal;
-                font-style: italic;
-                }
-*/
-
-
-
-
-
 
         
 * {
@@ -51,9 +20,9 @@ body {
 header {
     background-color: #034752;
     padding: 20px  40px;
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Distribute space between items */
-    align-items: center; /* Align items vertically */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
 }
 
@@ -162,8 +131,8 @@ p {
 .hero {
     background-color: #034752;
     color: white;
-    padding: 200px 180px; /* Ajusta el padding según sea necesario */
-    height: 100vh; /* Altura completa de la ventana del navegador */
+    padding: 200px 180px; 
+    height: 100vh; 
     display: flex;
     justify-content: space-between;
     
@@ -190,17 +159,17 @@ p {
 }
 
 .hero-image {
-    flex-shrink: 0; /* Evita que el div se reduzca */
-    width: 50%; /* Ajusta el ancho del contenedor de la imagen */
+    flex-shrink: 0; 
+    width: 50%; 
     display: flex;
-    justify-content: flex-end; /* Alinea la imagen a la derecha dentro del contenedor */
-    align-items: center; /* Centra la imagen verticalmente dentro del contenedor */
-    padding: 20px; /* Espacio alrededor de la imagen */
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px;
 }
 
 .hero-image img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 100%; 
+    height: auto; 
 }
 
 
@@ -215,7 +184,7 @@ p {
 /* Estilos para la sección Como Funciona */
 .como-funciona {
     background-color: #ffffff;
-    padding: 100px 20px;
+    padding: 80px;
     text-align: center;
 }
 
@@ -234,6 +203,7 @@ p {
     margin-bottom: 10px;
     color: #034752;
     font-weight: normal;
+    padding-top: 100px;
 }
 
 .como-funciona h3 {
@@ -284,10 +254,14 @@ p {
 /* Estilos para la sección Rutas óptimas */
 .rutas-optimas {
     background-color: #ffffff;
-    padding: 0px 20px;
     text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
 }
-
 
 .rutas-optimas .container {
     text-align: center;
@@ -301,7 +275,6 @@ p {
 .rutas-optimas h2 {
     text-align: center;
     font-size: 48px;
-    margin-bottom: 10px;
     color: #034752;
     font-weight: normal;
 }
@@ -309,18 +282,30 @@ p {
 .rutas-optimas p {
     padding: 20px;
     color: #034752;
-}
-
-.section-rutas-optimas {
-    padding: 60px 20px;
-}
-
-.section-rutas-optimas .container {
-    display: space-between;
+    padding-bottom: 20px;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
+
+.rutas-optimas2 {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-left: 300px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .foto {
     flex: 1;
@@ -335,6 +320,8 @@ p {
     flex: 2;
     display: flex;
     flex-direction: column;
+    color:#034752
+
 }
 
 .item {
@@ -353,6 +340,9 @@ p {
     margin: 0 0 10px;
 }
 
+.reseñas2 i {
+color: #FFE993;
+}
 
 
 
@@ -380,45 +370,6 @@ p {
     color: #034752;
     font-weight: bold;
 }
-.
-
-
-
-
-
-
-
-
-
-
-
-
-/*Estilos para Carrusel*/
-
-.carrusel {
-    background-color: #D2FFE2; 
-    height: 100vh; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 200px;
-    position: fixed;
-}
-
-.carrusel .content {
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #D2FFE2;
-}
-
-.carrusel img {
-    max-width: 100%;
-    max-height: 100%;
-    }
-
-
-
-
 
 
 
@@ -444,7 +395,6 @@ p {
 .reseñas .container {
     text-align: center;
     max-width: 1800px;
-    margin: 0 auto;
     background-color: #ffffff;
     border: none;
 }
@@ -506,8 +456,7 @@ p {
 }
 
 
-.stars i {
-    margin-right: 2px;
+.reseña i {
     color: #FFE993; 
 }
 
@@ -579,3 +528,65 @@ p {
   .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
   } 
+
+
+
+
+  .reseñas {
+    padding: 50px;
+
+}
+
+
+  .reseñas2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: white;
+
+}
+
+.reseña-carta {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 11px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    flex: 2;
+    box-sizing: border-box; 
+}
+
+.reseña-carta img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.reseña-carta h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #034752;
+}
+
+.reseña-carta p {
+    font-size: 14px;
+    color: #034752
+}
+
+
+
+.footer-container {
+    background-color: #034752;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-container p {
+    color:white
+}
