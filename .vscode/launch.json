@@ -3,9 +3,12 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [ //hay que elegir que buscador "source map" abre mejor nuestro proyecto, 
+    "configurations": [
+
+         //hay que elegir que buscador "source map" abre mejor nuestro proyecto, 
     // desde mi commpu no pude abrir con chrome. avisenme si pueden abrirlo con google chrome ustedes
-    // sino hay que indicar aca con que se abre
+    // estos source maps ayudan a mapear el código fuente original al código ejecutable en el navegador
+    // solo hay que configurarlo. lo intenté pero no me salió
 
         {
             "args": [
@@ -19,20 +22,7 @@
             "request": "launch",
             "type": "extensionHost"
         },
-        {
-            "name": "Launch Chrome",
-            "request": "launch",
-            "type": "chrome",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
+    
         {
             "type": "chrome",
             "request": "launch",

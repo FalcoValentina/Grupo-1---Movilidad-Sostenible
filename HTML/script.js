@@ -1,5 +1,5 @@
 
-let Nombre = prompt("Por favor")
+let Nombre = prompt ("Por favor")
 
 let Lugar = prompt ("¿Tu lugar de residencia es en CABA?")
 
