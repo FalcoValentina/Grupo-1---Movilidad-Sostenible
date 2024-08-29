@@ -24,7 +24,9 @@ styles.css
                 <i class="ri-menu-line"></i>
             </nav>
         </div>
-    </header>
+      </header>
+
+
 
     <main>
         <!-- Add your main content here -->
@@ -45,8 +47,29 @@ styles.css
 
     <script src="script.js"></script> <!-- link to your JavaScript file -->
 </body>
-</html>
 
+</html>
+.logo {
+  width: 18%;
+  height: 50%;
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  .navegacion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 
