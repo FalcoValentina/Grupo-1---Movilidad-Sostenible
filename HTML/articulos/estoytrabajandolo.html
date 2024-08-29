@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<articulos class="html"></articulos>
 <html lang="en">
 
 <head>
@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
+
 
 <body>
     <header>
@@ -168,50 +169,77 @@
 <section class="articulos">
     <div class="container">
          <h2>Articulos</h2>
-         <p>Aprendé más sobre la Sostenibilidad Urbana<br>a traves de estos articulos. Lecturas rápidas, sencillas y entretenidas.</p>
+         <p>Aprendé más sobre la Sostenibilidad Urbana<br>a traves de estos articulos. Lecturas sencillas, rápidas y entretenidas.</p>
          </div>
          <div class="Articulos">
              <div class="articulos-header">
 
- <section>
+ <section>        
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articulos sobre Sostenibilidad</title>
+</head>
+<body>
+    <h1>Articulos para aprender sobre la Sostenibilidad</h1>
+    <ul id="articulosList">
+        <!-- Sección para agregar enlaces -->
+    </ul>
 
+    <script>
+        // Agregar enlace de artículo a la lista
+        const enlace = "https://fund.ar/publicacion/politicas-de-transicion-a-la-electromovilidad/";
+        const listaArticulos = document.getElementById("articulosList");
 
-
-
-
-
-
-
-
-    <!-- nuevo -->
-
-    <!--
-    <div>
-        <div class="carousel-slides">
-          <div class="carousel-slide active">
-            <img src="../Fotos/bici1.jpg" alt="Image 1">
-            <div class="carousel-caption">
-                <h2>Texto sobre la imagen 1</h2>
-                <p>Descripción de la imagen</p>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="../Fotos/bici2.jpg" alt="Image 2">
-            <div class="carousel-caption">Texto para la imagen 2</div>
-          </div>
-          <div class="carousel-slide">
-            <img src="../Fotos/bici3.jpg" alt="Image 3">
-            <div class="carousel-caption">Texto para la imagen 3</div>
-          </div>
-        </div>
-        <button class="carousel-button prev">&#10094;</button>
-        <button class="carousel-button next">&#10095;</button>
-    </div>
-    
-    hasta aca -->
-
+        const nuevoElemento = document.createElement("li");
+        const nuevoEnlace = document.createElement("a");
+        nuevoEnlace.href = enlace;
+        nuevoEnlace.textContent = "Políticas de transición a la electromovilidad";
+        
+        nuevoElemento.appendChild(nuevoEnlace);
+        listaArticulos.appendChild(nuevoElemento);
+    </script>
 </body>
-
 </html>
+
+<nav class="navegacion">
+    <ul class="list">
+      <li class="menu">
+        <a id="quienes-link">¿Quiénes somos?</a>
+      </li>
+      <li class="menu">
+        <a id="articulos-link">Artículos</a>
+      </li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+  
+  <nav class="navegacion">
+    <ul class="list">
+      <li class="menu">
+        <a href="quienes.html">¿Quiénes somos?</a>
+      </li>
+      <li class="menu">
+        <a href="articulos.html">Artículos</a>
+      </li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+
+
+
+
+  <script>
+    document.getElementById('quienes-link').addEventListener('click', () => {
+      window.location.href = 'quienes.html';
+    });
+  
+    document.getElementById('articulos-link').addEventListener('click', () => {
+      window.location.href = 'articulos.html';
+    });
+  </script>
+
+
+
