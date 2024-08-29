@@ -43,12 +43,13 @@ section {
 }
 
 .section1 img, .section2 img, .section3 img {
-  width: 40%;
+  width: 20%;
   margin: 0 20px;
 }
 
 .section1 .text-content, .section2 .text-content, .section3 .text-content {
   width: 60%;
+  color: #ddd;
 }
 
 .section1 .text-content {
@@ -76,6 +77,12 @@ ul {
   padding-left: 20px;
 }
 
+footer{
+  background-color: #034752;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+}
 
 .navegacion {
   display: flex;
