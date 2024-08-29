@@ -24,12 +24,13 @@ body {
 
 header {
   background-color: #034752;
-  padding: 20px 40px;
+  padding: 20px  40px;
   display: flex; /* Enable flexbox layout */
   justify-content: space-between; /* Distribute space between items */
   align-items: center; /* Align items vertically */
   width: 100%;
 }
+
 
 a {
   color: white;
@@ -82,6 +83,7 @@ ul {
   padding-left: 20px;
 }
 
+
 .navegacion {
   display: flex;
   align-items: center;
@@ -97,6 +99,7 @@ ul {
 }
 
 i {
+  
   color: #00D47F;
   font-size: 25px;
   transition: opacity 0.3s ease-in-out;
@@ -134,43 +137,54 @@ i:hover {
   height: 50%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
   header {
-    flex-direction: column;
+      flex-direction: column;
   }
   h1 {
-    font-size: 4em;
+      font-size: 4em;
   }
   .navegacion {
-    flex-direction: column;
-    gap: 0.5rem;
+      flex-direction: column;
+      gap: 0.5rem;
   }
   .list {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3em;
+      font-size: 3em;
   }
   .menu {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
   i {
-    font-size: 25px;
+      font-size: 25px;
   }
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 2.5em;
+      font-size: 2.5em;
   }
   .menu {
-    font-size: 1rem;
+      font-size: 1rem;
   }
   i {
-    font-size: 20px;
+      font-size: 20px;
   }
 }
