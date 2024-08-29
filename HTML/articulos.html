@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,37 @@
 </head>
 
 
+
+<body>
+    <h1>Bienvenido a nuestra Encuesta</h1>
+    <p>Haz clic en el botón para comenzar.</p>
+    <button onclick="iniciarEncuesta()">Iniciar Encuesta</button>
+
+    <script>
+        function iniciarEncuesta() {
+            let Nombre = prompt("Por favor, ingresa tu nombre:");
+
+            let Lugar = prompt("¿Tu lugar de residencia es en CABA? (responde con Sí o No)");
+
+            if (Lugar.toLowerCase() === "sí" || Lugar.toLowerCase() === "si") {
+                alert("¡Qué bueno que vivas en CABA!");
+            } else if (Lugar.toLowerCase() === "no") {
+                alert("Entendido, no vives en CABA.");
+            } else {
+                alert("Respuesta no válida. Por favor, responde con 'Sí' o 'No'.");
+            }
+
+            let mail = prompt("Para mantenerte informado, déjanos tu mail:");
+
+            alert(`Muchas gracias, ${Nombre}`);
+        }
+    </script>
+</body>
+<!-- 
+
 <body>
     <header>
-        <!--<h1>EcoMove</h1> -->
+        <h1>EcoMove</h1>
         <img src="../Fotos/Logo verde.svg" alt="Logo de Mi Sitio Web" class="logo">
     <div class="container">
         <nav class="navegacion">
@@ -31,7 +59,7 @@
                     <a href="#">Recompensas</a>
                 </li>
             </ul>
-            <!-- <i class="ri-user-line"></i> -->
+           <i class="ri-user-line"></i> 
             <i class="ri-search-line"></i>
             <i class="ri-menu-line"></i>
         </nav>
@@ -94,4 +122,4 @@
             });
     </script>
 </body>
-</html>
+</html> -->
