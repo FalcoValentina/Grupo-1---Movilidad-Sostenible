@@ -3,7 +3,22 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [ //hay que elegir que buscador "source map" abre mejor nuestro proyecto, 
+    // desde mi commpu no pude abrir con chrome. avisenme si pueden abrirlo con google chrome ustedes
+    // sino hay que indicar aca con que se abre
+
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
         {
             "name": "Launch Chrome",
             "request": "launch",
