@@ -1,4 +1,5 @@
-style.css
+styles.css
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@ style.css
 <body>
     <header>
         <div class="container">
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="logo.png" alt="Logo de EcoMove" class="logo">
             <nav class="navegacion">
                 <ul class="list">
                     <li class="menu"><a href="quienes.html">¿Quiénes somos?</a></li>
